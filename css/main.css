@@ -21,6 +21,12 @@ main{
     color: white;
 }
 
+#Banner_Inci
+{
+    width: 30vw;
+    height: 35vh;
+}
+
 #Descargas2{
     background-color: #590222;
     color: white;
@@ -67,7 +73,14 @@ body{
 .BotonesDescarga
 {
     width: 12vw;
-    height: 7vh;
+    height: 9vh;
+}
+
+.vertical-center-row {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure the column takes full height */
 }
 
 
