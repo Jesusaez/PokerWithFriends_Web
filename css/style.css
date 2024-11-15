@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-color: #F2DFE6;
+}
+
+nav > *{
+    flex: 1;
+}
+
+
+main{
+    background-color:#BFA3AA;
+}
+
+/* footer{
+    background-color:darkgoldenrod;
+} */
+
+/*FLEX*/
+
+.flex{
+    display: flex;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+.flexRow{
+    flex-direction: row;
+}
+
+#logoMenu{
+    height: 3.5em;
+}
+#navBar{
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+
+}
+#navBar ul li{
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.5em;
+}
+#navBar ul li:hover {
+    background-color: rgb(125, 125, 125);
+    transition-duration:500ms;
+}
+.BotonesDescarga{
+    background-color: white;
+    justify-content: center;
+    border-radius: 0.3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+}
+#redes{
+    padding: 1.5em 1em;
+    background-color: #F2DFE6;
+    justify-content:space-between;
+}
+#footerPrincipal>*{
+    align-self: center;
+    padding: 0 1.5em;
+
+}
+#footerPrincipal >:first-child{
+    flex: 0.3;
+}
+
+
+.titulos{
+    padding-bottom: 0.5em;
+    color: grey;
+    font-size: 0.9em;
+}
+.elementosFooter>*{
+    margin-bottom: 0.5em;
+}
+#footerPrincipal{
+    padding: 1.5em;
+    background-color:  #F2DFE6;
+    justify-content: center;
+}
+#copy{
+    padding: 1.5em 0;
+    background-color: #F2F2F2;
+    justify-content: center;
+}
+#main{
+    justify-content: center;
+    padding: 1em 0;
+}
+#contenidorDescarga{
+    flex-direction: row;
+    align-items: center;
+}
+a{
+    color: rgb(74, 74, 74);
+    text-decoration: none;
+}
+
+#myDropdown{
+    flex: 10;
+}
+
+#myDropdown > *{
+    flex: 1;
+}
