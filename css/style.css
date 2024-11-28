@@ -1,0 +1,249 @@
+/* Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #F2DFE6;
+}
+
+/* Header */
+#navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#logoMenu {
+    height: 3em;
+}
+
+#myDropdown {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+}
+
+#myDropdown li {
+    margin: 0 1em;
+}
+
+#myDropdown li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition: background-color 0.3s;
+}
+
+#myDropdown li a:hover {
+    background-color: rgb(125, 125, 125);
+    color: white;
+}
+
+/* hamburguesa */
+#ulH{
+    display: none;
+  }
+  
+#menuH:checked ~ #ulH{
+    display: block;
+}
+  
+#menuH {
+    display: none;
+}
+  
+#lbMenu {
+    box-sizing: border-box;
+    display: inline-block;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+  
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+#lbMenu:hover{
+    background: grey;
+}
+  
+  /* Estilo del boton cuando el menú está expandido*/
+input:checked ~ .lbMenu {
+    background: lightgrey; 
+}
+  
+#ulH{
+    margin-top:0;
+    padding: 0;
+    width: 200px;
+  
+}
+  
+#ulH>li {
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
+  
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+#ulH>li:hover {
+    filter: brightness(110%);
+}
+
+#block{
+    display: block;
+}
+
+/* Main */
+main {
+    background-color: #BFA3AA;
+    padding: 2em;
+    text-align: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+#titulo {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#contenidorDescarga {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.BotonesDescarga {
+    background-color: white;
+    padding: 0.8em 1.5em;
+    border-radius: 0.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.BotonesDescarga:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+#redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #F2DFE6;
+}
+
+#redes a {
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#footerPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #F2DFE6;
+    text-align: center;
+}
+
+#footerPrincipal .elementosFooter {
+    flex: 1;
+    padding: 1em;
+}
+
+.titulos {
+    font-size: 1em;
+    color: grey;
+    margin-bottom: 0.5em;
+}
+
+#copy {
+    background-color: #F2F2F2;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Media Queries */
+/* Ajustes para dispositivos pequeños */
+@media only screen and (max-width: 768px) {
+    #Hamburguesa{
+        display: flex;
+    }
+    #myDropdown {
+        display: none;
+        /* flex-direction: column; */
+        /* text-align: center; */
+    }
+
+    #myDropdown li {
+        margin: 0.5em 0;
+    }
+
+    #contenidorDescarga {
+        flex-direction: column;
+    }
+
+    #footerPrincipal {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Ajustes para dispositivos medianos */
+@media only screen and (min-width: 768px) {
+    #Hamburguesa{
+        display: none;
+    }
+    /* #myDropdown li a {
+        /* font-size: 14px; */
+    /* } */
+
+    /* #titulo { */
+        /* font-size: 1.5em; */
+    /* } */
+
+    .BotonesDescarga {
+        /* font-size: 14px; */
+        padding: 0.5em 1em;
+    }
+}

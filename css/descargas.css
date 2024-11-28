@@ -1,3 +1,36 @@
+a, h1{
+    font-family: sans-serif;
+}
+.titol{
+    font-size: 50px;
+}
+#BotonesDescarga{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.boton {
+    transition: background-color 0.5s;
+    background-color: #590222;
+    color: white;
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top: -20px;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+.boton p {
+    margin: 0;
+}
+.boton:hover{
+    background-color:#b25074;
+    color: white;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +38,7 @@
 }
 html{
     max-width: 100vw;
-    max-height: 100vh;
+    max-height: 1000vh;
 }
 
 main{
@@ -13,6 +46,7 @@ main{
 }
 
 #Descargas{
+    transition: background-color 0.5s;
     background-color: #590222;
     color: white;
 }
@@ -23,33 +57,8 @@ main{
 
 #Banner_Inci
 {
-    /* border: 5px solid black; 
-    border-radius: 10px; */
-    width: 101vw;
-    height: 40vh;
-    
-}
-
-.textoInicial
-{
-    font-family: Andale Mono; 
-    font-size: 3vh;
-    color: #8C0303;
-}
-
-
-
-.download-button:hover {
-    background-color: #ff4500; /* Color más brillante al pasar el ratón */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
-}
-
-
-
-.Contenidor1
-{
-    margin-top: 2.5vh;
-    margin-bottom: 2vh;
+    width: 30vw;
+    height: 35vh;
 }
 
 #Descargas2{
@@ -62,10 +71,11 @@ main{
 }
 .nav-link{
     margin: 1vw;
-    border: 1px solid black;
+    border-radius: 0.5em;
 }
 .nav-link:hover
 {
+    transition: background-color 0.5s;
     background-color:#BFA3AA;
 }
 nav{
@@ -84,10 +94,15 @@ body{
     
 }
 #Trailer2{
-    width: 90vw;
+    width: 40vw;
     height: 50vh;
 }
 
+.Contenidor1
+{
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+}
 
 
 .BotonesDescarga
@@ -193,22 +208,8 @@ header{
 {
     width: 5vw;
     height: 5vw;
-    margin: 1vh; 
+    margin: 0 1vw 0 2vw; ; 
 } 
-.download-button {
-    background-color: #b22222; /* Color rojizo */
-    color: white;
-    border: none;
-    padding: 1vw;
-    font-size: 5vw;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 8px;
-    cursor: pointer;
-    text-decoration: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px){
@@ -224,47 +225,11 @@ header{
     .col-sm-10 {width: 83.33%;}
     .col-sm-11 {width: 91.66%;}
     .col-sm-12 {width: 100%;}
-    .download-button {
-        background-color: #b22222; /* Color rojizo */
-        color: white;
-        border: none;
-        padding: 1vw;
-        font-size: 4vw;
-        font-weight: bold;
-        text-transform: uppercase;
-        border-radius: 8px;
-        cursor: pointer;
-        text-decoration: none;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-        transition: background-color 0.3s, box-shadow 0.3s;
-    }
-    #Trailer2{
-        width: 70vw;
-        height: 50vh;
-    }
     
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 710px) {
-
-    .download-button {
-        background-color: #b22222; /* Color rojizo */
-        color: white;
-        border: none;
-        padding: 1vw;
-        font-size: 3vw;
-        font-weight: bold;
-        text-transform: uppercase;
-        border-radius: 8px;
-        cursor: pointer;
-        text-decoration: none;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-        transition: background-color 0.3s, box-shadow 0.3s;
-    }
-}
-
-@media only screen and (min-width: 775px) {
+@media only screen and (min-width: 768px) {
     .col-md-1 {width: 8.33%;}
     .col-md-2 {width: 16.66%;}
     .col-md-3 {width: 25%;}
@@ -277,22 +242,7 @@ header{
     .col-md-10 {width: 83.33%;}
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
-    .download-button {
-        background-color: #b22222; /* Color rojizo */
-        color: white;
-        border: none;
-        padding: 1vw;
-        font-size: 6vh;
-        font-weight: bold;
-        text-transform: uppercase;
-        border-radius: 8px;
-        cursor: pointer;
-        text-decoration: none;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-        transition: background-color 0.3s, box-shadow 0.3s;
-    }
 }
-
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -313,30 +263,11 @@ header{
         height: 15vw;
     }
     
-    #Trailer2{
-        width: 40vw;
-        height: 50vh;
-    }
-    
     #logoMenu
     {
         width: 3vw;
         height: 3vw;
     } 
-    .download-button {
-        background-color: #b22222; /* Color rojizo */
-        color: white;
-        border: none;
-        padding: 1vh;
-        font-size: 4vh;
-        font-weight: bold;
-        text-transform: uppercase;
-        border-radius: 8px;
-        cursor: pointer;
-        text-decoration: none;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-        transition: background-color 0.3s, box-shadow 0.3s;
-    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -353,20 +284,6 @@ header{
   .col-xl-10 {width: 83.33%;}
   .col-xl-11 {width: 91.66%;}
   .col-xl-12 {width: 100%;}
-  .download-button {
-    background-color: #b22222; /* Color rojizo */
-    color: white;
-    border: none;
-    padding: 1vh;
-    font-size: 4.5vh;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 8px;
-    cursor: pointer;
-    text-decoration: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
