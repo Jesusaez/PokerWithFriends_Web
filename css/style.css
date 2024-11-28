@@ -1,128 +1,249 @@
-*{
+/* Base */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
-    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
-body{
+body {
     height: 100vh;
     width: 100vw;
-}
-
-header{
-    background-color: #F2DFE6;
-}
-
-nav > *{
-    flex: 1;
-}
-
-
-main{
-    background-color:#BFA3AA;
-}
-
-/* footer{
-    background-color:darkgoldenrod;
-} */
-
-/*FLEX*/
-
-.flex{
     display: flex;
-}
-
-.flexColumn{
     flex-direction: column;
 }
 
-.flexRow{
-    flex-direction: row;
+header {
+    background-color: #F2DFE6;
 }
 
-#logoMenu{
-    height: 3.5em;
-}
-#navBar{
+/* Header */
+#navBar {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.5em 0.5em 0.5em 0.5em;
-
+    justify-content: space-between;
+    padding: 1em;
 }
-#navBar ul li{
-    padding: 15px 25px;
+
+#logoMenu {
+    height: 3em;
+}
+
+#myDropdown {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+}
+
+#myDropdown li {
+    margin: 0 1em;
+}
+
+#myDropdown li a {
     text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
-    width: 100%;
-    text-align: center;
+    font-size: 16px;
+    color: #333;
+    padding: 0.5em 1em;
     border-radius: 0.5em;
+    transition: background-color 0.3s;
 }
-#navBar ul li:hover {
+
+#myDropdown li a:hover {
     background-color: rgb(125, 125, 125);
-    transition-duration:500ms;
+    color: white;
 }
-.BotonesDescarga{
-    background-color: white;
+
+/* hamburguesa */
+#ulH{
+    display: none;
+  }
+  
+#menuH:checked ~ #ulH{
+    display: block;
+}
+  
+#menuH {
+    display: none;
+}
+  
+#lbMenu {
+    box-sizing: border-box;
+    display: inline-block;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+  
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+#lbMenu:hover{
+    background: grey;
+}
+  
+  /* Estilo del boton cuando el menú está expandido*/
+input:checked ~ .lbMenu {
+    background: lightgrey; 
+}
+  
+#ulH{
+    margin-top:0;
+    padding: 0;
+    width: 200px;
+  
+}
+  
+#ulH>li {
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
+  
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+#ulH>li:hover {
+    filter: brightness(110%);
+}
+
+#block{
+    display: block;
+}
+
+/* Main */
+main {
+    background-color: #BFA3AA;
+    padding: 2em;
+    text-align: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 1.5em;
+}
+
+#titulo {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#contenidorDescarga {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.BotonesDescarga {
+    background-color: white;
+    padding: 0.8em 1.5em;
     border-radius: 0.3em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-#redes{
-    padding: 1.5em 1em;
+
+.BotonesDescarga:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+#redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
     background-color: #F2DFE6;
-    justify-content:space-between;
-}
-#footerPrincipal>*{
-    align-self: center;
-    padding: 0 1.5em;
-
-}
-#footerPrincipal >:first-child{
-    flex: 0.3;
 }
 
+#redes a {
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
 
-.titulos{
-    padding-bottom: 0.5em;
+#footerPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #F2DFE6;
+    text-align: center;
+}
+
+#footerPrincipal .elementosFooter {
+    flex: 1;
+    padding: 1em;
+}
+
+.titulos {
+    font-size: 1em;
     color: grey;
-    font-size: 0.9em;
-}
-.elementosFooter>*{
     margin-bottom: 0.5em;
 }
-#footerPrincipal{
-    padding: 1.5em;
-    background-color:  #F2DFE6;
-    justify-content: center;
-}
-#copy{
-    padding: 1.5em 0;
+
+#copy {
     background-color: #F2F2F2;
-    justify-content: center;
-}
-#main{
-    justify-content: center;
-    padding: 1em 0;
-}
-#contenidorDescarga{
-    flex-direction: row;
-    align-items: center;
-}
-a{
-    color: rgb(74, 74, 74);
-    text-decoration: none;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.9em;
 }
 
-#myDropdown{
-    flex: 10;
+/* Media Queries */
+/* Ajustes para dispositivos pequeños */
+@media only screen and (max-width: 768px) {
+    #Hamburguesa{
+        display: flex;
+    }
+    #myDropdown {
+        display: none;
+        /* flex-direction: column; */
+        /* text-align: center; */
+    }
+
+    #myDropdown li {
+        margin: 0.5em 0;
+    }
+
+    #contenidorDescarga {
+        flex-direction: column;
+    }
+
+    #footerPrincipal {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-#myDropdown > *{
-    flex: 1;
+/* Ajustes para dispositivos medianos */
+@media only screen and (min-width: 768px) {
+    #Hamburguesa{
+        display: none;
+    }
+    /* #myDropdown li a {
+        /* font-size: 14px; */
+    /* } */
+
+    /* #titulo { */
+        /* font-size: 1.5em; */
+    /* } */
+
+    .BotonesDescarga {
+        /* font-size: 14px; */
+        padding: 0.5em 1em;
+    }
 }
