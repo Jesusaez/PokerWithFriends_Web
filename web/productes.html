@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
     <head>
         <meta charset="utf-8">
         <title>Test</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Insertar Descripcion Breve sobre la web"/>
-        <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3"/>
+        <meta name="description" content="Inserir una breu descripció sobre la web"/>
+        <meta name="keywords" content="paraula clau 1, paraula clau 2, paraula clau 3"/>
         <meta name="author" content="Jesus Saez" />
         <meta name="copyright" content="Jesus Saez" />
         <link rel="Shortcut Icon" href="../img/logo.png" type="image/x-icon">
-        <link rel="stylesheet" href="../css/descargas.css">
+        <script src="/js/index.js"></script>
         <link rel="stylesheet" href="../css/style.css">
-        <script src="../js/carrousel.js" defer></script>
+        <link rel="stylesheet" href="../css/productes.css">
     </head>
     <body>
         <!--HEADER-->
@@ -29,56 +29,70 @@
               <label id="lbMenu" for="menuH">  ☰  </label>
               <ul id="ulH">
                 <li>
-                  <a href="../index.html">Inici</alass=>
+                  <a href="../index.html">Inici</a>
                 </li>
                 <li>
-                  <a href="#">Descargas</a>
+                  <a id="Descargas2" href="./descargas.html">Descarregar</a>
                 </li>
                 <li>
-                    <a href="#">Productos</a>
+                    <a href="./productes.html">Productes</a>
                 </li>
                 <li>
-                    <a href="#">Sobre Nosotros</a>
+                    <a href="./nosaltres.html">Sobre Nosaltres</a>
                 </li>
               </ul>
             </nav>
           </nav>
-          
         </header>
         <!-- MAIN -->
-
         <main>
-          <section class="hero">
-            <h1>Descàrrega Poker Amb Amics</h1>
-            <div class="buttons">
-              <a href="#" class="btn">Windows</a>
-              <a href="#" class="btn">Mac</a>
-            </div>
-          </section>
-          <section class="carousel">
-            <div class="carousel-container">
-              <div class="carousel-slide">
-                <img src="../img/juegoPoker.jpg" alt="Imagen 1">
+          <h1>Productes</h1>
+          <div class="gallery">
+              <!-- Tarjeta de producte -->
+              <div class="product-card">
+                <a class="product-link" href="">
+                  <img src="https://static.pullandbear.net/assets/public/161d/c6c2/09944b64b394/31324ac561a2/07710533800-A1M/07710533800-A1M.jpg?ts=1723208554461&w=688&f=auto" alt="Jaqueta 1">
+                  <div class="product-info">
+                      <div class="product-title">Jaqueta encoixinada caputxa STWD</div>
+                      <div class="product-price">39,99 €</div>
+                      <div class="product-colors">8 Colors</div>
+                  </div>
+                </a>
               </div>
-              <div class="carousel-slide">
-                <img src="../img/juegoPoker.jpg" alt="Imagen 2">
+              <div class="product-card">
+                <a class="product-link" href="">
+                  <img src="https://static.pullandbear.net/assets/public/161d/c6c2/09944b64b394/31324ac561a2/07710533800-A1M/07710533800-A1M.jpg?ts=1723208554461&w=688&f=auto" alt="Jaqueta 1">
+                  <div class="product-info">
+                      <div class="product-title">Jaqueta encoixinada caputxa STWD</div>
+                      <div class="product-price">39,99 €</div>
+                      <div class="product-colors">8 Colors</div>
+                  </div>
+                </a>
               </div>
-              <div class="carousel-slide">
-                <img src="../img/juegoPoker.jpg" alt="Imagen 3">
+              <div class="product-card">
+                <a class="product-link" href="">
+                  <img src="https://static.pullandbear.net/assets/public/161d/c6c2/09944b64b394/31324ac561a2/07710533800-A1M/07710533800-A1M.jpg?ts=1723208554461&w=688&f=auto" alt="Jaqueta 1">
+                  <div class="product-info">
+                      <div class="product-title">Jaqueta encoixinada caputxa STWD</div>
+                      <div class="product-price">39,99 €</div>
+                      <div class="product-colors">8 Colors</div>
+                  </div>
+                </a>
               </div>
-            </div>
-            <button class="carousel-btn prev">&lt;</button>
-            <button class="carousel-btn next">&gt;</button>
-            <div class="carousel-indicators">
-              <span class="indicator active" data-slide="0"></span>
-              <span class="indicator" data-slide="1"></span>
-              <span class="indicator" data-slide="2"></span>
-            </div>
-          </section>
-
-
-      </main>
-        
+              <div class="product-card">
+                <a class="product-link" href="">
+                  <img src="https://static.pullandbear.net/assets/public/161d/c6c2/09944b64b394/31324ac561a2/07710533800-A1M/07710533800-A1M.jpg?ts=1723208554461&w=688&f=auto" alt="Jaqueta 1">
+                  <div class="product-info">
+                      <div class="product-title">Jaqueta encoixinada caputxa STWD</div>
+                      <div class="product-price">39,99 €</div>
+                      <div class="product-colors">8 Colors</div>
+                  </div>
+                </a>
+              </div>
+              
+              
+          </div>
+        </main>
         <!-- FOOTER -->
         <footer>
           <!-- Xarxes Socials -->
@@ -132,6 +146,5 @@
             <a href="#">Poker With Friends</a>
           </div>
         </footer>
-        <!-- <script src="../js/carrousel.js"></script> -->
     </body>
 </html>

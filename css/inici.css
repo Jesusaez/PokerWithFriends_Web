@@ -1,0 +1,157 @@
+/* Estilos básicos */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+   */
+  /* Estilo para el menú con el ID "submenu" */
+  #submenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Fija el menú en la pantalla */
+    top: 20em;
+    right: 2em; /* Alineado a la derecha */
+    width: 10em;
+    background-color: #333;
+    padding: 20px 0; /* Espaciado interno */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    border-radius: 20em;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+#submenu.hidden {
+    opacity: 0; /* Hace que desaparezca visualmente */
+    visibility: hidden; /* Evita la interacción */
+  }
+  #submenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #submenu ul li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #submenu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+  }
+  
+  #submenu ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Estilo para el submenú */
+  #submenu ul li ul {
+    display: block; /* Siempre visible */
+    padding-left: 15px; /* Aumentar sangría para diferenciar del menú principal */
+    margin-top: 10px;
+  }
+  
+  #submenu ul li ul li a {
+    font-size: 14px; /* Tamaño de texto más pequeño para el submenú */
+  }
+  
+  #submenu ul li ul li a:hover {
+    background-color: #666;
+  }
+  
+  /* Estilo de las secciones */
+  /* section {
+    margin-left: 220px;
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  section h1 {
+    margin-top: 0;
+  }
+   */
+   main {
+    flex: 1; /* Ocupa el espacio disponible */
+    padding: 20px;
+  }
+  #fondo{
+    background-image: url('/img/fondo.png');
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-size: cover;
+    margin:-2em;
+    width: 100vw;
+    height: 80vh;
+    /* filter: blur(0.5em); */
+  }
+  #fondo>h1{
+    color:rgba(255, 255, 255, 0.823);
+    padding-top: 3em;
+    font-size: 5em;
+  }
+  #logoPagina{
+    margin-top: 10em;
+    margin-bottom: 10em;
+    justify-self: center;
+  }
+  #cajaFotos{
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+  }
+  .fotosCaja{
+    margin-top: -5em;
+    margin-left: 3em;
+    border: white 1em solid;
+    border-radius: 1em;
+    width: 30em;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #trailer{
+    width: 70vw;
+    height: 50vh;
+  }
+  @media only screen and (max-width: 768px) {
+    .fotosCaja{
+      max-width: 20em;
+    }
+    #fondo>h1{
+      padding: 0;
+    }
+  }
+  @media only screen and (max-width: 1068px) {
+    #submenu{
+      visibility: hidden;
+    }
+    .row{
+      flex-direction: column;
+    }
+    #cajaFotos{
+      flex-direction: column;
+    }
+    .fotosCaja{
+      margin-bottom: 7em;
+      margin-left: 0;
+    }
+    #trailer{
+      height: 30vh;
+    }
+  }
+  @media only screen and (max-width: 1768px) {
+    #cajaFotos>img{
+      margin-bottom: 8em;
+    }
+  }

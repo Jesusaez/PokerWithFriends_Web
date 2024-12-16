@@ -1,315 +1,138 @@
-a, h1{
-    font-family: sans-serif;
-}
-.titol{
-    font-size: 50px;
-}
-#BotonesDescarga{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-.boton {
-    transition: background-color 0.5s;
-    background-color: #590222;
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('https://example.com/poker-table-bg.jpg') no-repeat center/cover;
     color: white;
-    width: 10vw;
-    height: 10vh;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    position: relative;
-    top: -20px;
-    border-radius: 0.5em 0.5em 0.5em 0.5em;
-}
-.boton p {
-    margin: 0;
-}
-.boton:hover{
-    background-color:#b25074;
-    color: white;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html{
-    max-width: 100vw;
-    max-height: 1000vh;
-}
-
-main{
-    background-color: #BFA3AA;
-}
-
-#Descargas{
-    transition: background-color 0.5s;
-    background-color: #590222;
-    color: white;
-}
-#Descargas:hover{
-    background-color:#b25074;
-    color: white;
-}
-
-#Banner_Inci
-{
-    width: 30vw;
-    height: 35vh;
-}
-
-#Descargas2{
-    background-color: #590222;
-    color: white;
-}
-#Descargas2:hover{
-    background-color:#b25074;
-    color: white;
-}
-.nav-link{
-    margin: 1vw;
-    border-radius: 0.5em;
-}
-.nav-link:hover
-{
-    transition: background-color 0.5s;
-    background-color:#BFA3AA;
-}
-nav{
-    background-color: #F2DFE6;
-}
-footer{
-    background-color: #F2DFE6;
-}
-
-body{
-    overflow-x: hidden;
-    max-width: 100vw;
-    max-height: 100vh;
-    width: 100vw;
-    height: 100vh;
-    
-}
-#Trailer2{
-    width: 40vw;
-    height: 50vh;
-}
-
-.Contenidor1
-{
-    margin-top: 10vh;
-    margin-bottom: 2vh;
-}
-
-
-.BotonesDescarga
-{
-    width: 12vw;
-    height: 9vh;
-}
-
-.vertical-center-row {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100%; /* Ensure the column takes full height */
-}
-
-
-
-.divMain{
-    max-width: 99vw;
-    max-height: 99vh;
-    margin: 0;
-    padding: 0;
-}
-
-header{
-    width: 100vw;
-    height: 10vh;
-
-}
-
-.Titulo{
-    color: #590219;
-}
-
-
-/* Dropdown Button */
-.dropbtn {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+    gap: 20px;
   }
   
-#BottonHamburguesa{
-    margin-right: 5vw;
-}
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0vw;
-    background-color: #F2DFE6;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+  .btn {
+    background-color: #d81b60;
+    color: white;
     text-decoration: none;
-    display: block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(216, 27, 96, 0.3);
   }
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {  background-color:#BFA3AA;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+  .btn:hover {
+    background-color: #6d1b7b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(216, 27, 96, 0.5);
+  }
 
-[class*="col-"]{float: left;}
-
-/* Extra small devices (phones, 575px and down) */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-#LogoTitulo{
-    width: 15vw;
-    height: 15vw;
+/* CARROUSEL */
+.carousel {
+  position: relative;
+  max-width: 40%;
+  min-height: 4em;
+  max-height: 25em;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(216, 27, 96, 0.5);
 }
 
-#logoMenu
-{
-    width: 5vw;
-    height: 5vw;
-    margin: 0 1vw 0 2vw; ; 
-} 
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-@media only screen and (min-width: 576px){
-    .col-sm-1 {width: 8.33%;}
-    .col-sm-2 {width: 16.66%;}
-    .col-sm-3 {width: 25%;}
-    .col-sm-4 {width: 33.33%;}
-    .col-sm-5 {width: 41.66%;}
-    .col-sm-6 {width: 50%;}
-    .col-sm-7 {width: 58.33%;}
-    .col-sm-8 {width: 66.66%;}
-    .col-sm-9 {width: 75%;}
-    .col-sm-10 {width: 83.33%;}
-    .col-sm-11 {width: 91.66%;}
-    .col-sm-12 {width: 100%;}
-    
+/* Contenedor de los slides */
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .col-md-1 {width: 8.33%;}
-    .col-md-2 {width: 16.66%;}
-    .col-md-3 {width: 25%;}
-    .col-md-4 {width: 33.33%;}
-    .col-md-5 {width: 41.66%;}
-    .col-md-6 {width: 50%;}
-    .col-md-7 {width: 58.33%;}
-    .col-md-8 {width: 66.66%;}
-    .col-md-9 {width: 75%;}
-    .col-md-10 {width: 83.33%;}
-    .col-md-11 {width: 91.66%;}
-    .col-md-12 {width: 100%;}
+/* Estilo de cada slide */
+.carousel-slide {
+  flex: 0 0 100%;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .col-lg-1 {width: 8.33%;}
-    .col-lg-2 {width: 16.66%;}
-    .col-lg-3 {width: 25%;}
-    .col-lg-4 {width: 33.33%;}
-    .col-lg-5 {width: 41.66%;}
-    .col-lg-6 {width: 50%;}
-    .col-lg-7 {width: 58.33%;}
-    .col-lg-8 {width: 66.66%;}
-    .col-lg-9 {width: 75%;}
-    .col-lg-10 {width: 83.33%;}
-    .col-lg-11 {width: 91.66%;}
-    .col-lg-12 {width: 100%;}
-    #LogoTitulo{
-        width: 15vw;
-        height: 15vw;
-    }
-    
-    #logoMenu
-    {
-        width: 3vw;
-        height: 3vw;
-    } 
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px){
-  .col-xl-1 {width: 8.33%;}
-  .col-xl-2 {width: 16.66%;}
-  .col-xl-3 {width: 25%;}
-  .col-xl-4 {width: 33.33%;}
-  .col-xl-5 {width: 41.66%;}
-  .col-xl-6 {width: 50%;}
-  .col-xl-7 {width: 58.33%;}
-  .col-xl-8 {width: 66.66%;}
-  .col-xl-9 {width: 75%;}
-  .col-xl-10 {width: 83.33%;}
-  .col-xl-11 {width: 91.66%;}
-  .col-xl-12 {width: 100%;}
+/* Botones del carrusel */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(216, 27, 96, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1400px){
-    .col-xxl-1 {width: 8.33%;}
-    .col-xxl-2 {width: 16.66%;}
-    .col-xxl-3 {width: 25%;}
-    .col-xxl-4 {width: 33.33%;}
-    .col-xxl-5 {width: 41.66%;}
-    .col-xxl-6 {width: 50%;}
-    .col-xxl-7 {width: 58.33%;}
-    .col-xxl-8 {width: 66.66%;}
-    .col-xxl-9 {width: 75%;}
-    .col-xxl-10 {width: 83.33%;}
-    .col-xxl-11 {width: 91.66%;}
-    .col-xxl-12 {width: 100%;}
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.flex{
-    display: flex;
+.carousel-btn.prev {
+  left: 10px;
 }
 
-.row{
-    flex-direction: row;
+.carousel-btn.next {
+  right: 10px;
 }
 
-.column{
-    flex-direction: column;
+/* Indicadores del carrusel */
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: rgba(255, 255, 255, 1);
+}
+.parrafo {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.parrafo>section{
+  flex:1;
+  margin-bottom: 3em;
+}
+li{
+  list-style: none;
+}
+@media only screen and (max-width: 768px) {
+  .parrafo{
+  flex-direction: column;
+  }
 }

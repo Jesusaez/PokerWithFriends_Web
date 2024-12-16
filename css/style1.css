@@ -4,23 +4,20 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
-    list-style: none;
 }
+
 body {
+    /* height: 100vh; */
+    /* width: 100vw; */
     display: flex;
     flex-direction: column;
-    background-color: #F9F9F9; /* Fondo principal más claro */
-    color: #333; /* Texto oscuro */
-    line-height: 1.6;
 }
-
-a {
+a{
     text-decoration: none;
-    color: #4A90E2; /* Azul suave para enlaces */
+    color:#333;
 }
-
 header {
-    background-color: #E6EDF3; /* Fondo gris azulado */
+    background-color: #F2DFE6;
 }
 
 /* Header */
@@ -50,113 +47,109 @@ header {
 #myDropdown li a {
     text-decoration: none;
     font-size: 16px;
-    color: #333; /* Texto oscuro */
+    color: #333;
     padding: 0.5em 1em;
     border-radius: 0.5em;
     transition: background-color 0.3s;
 }
 
 #myDropdown li a:hover {
-    background-color: #4A90E2; /* Azul suave */
+    background-color: rgb(125, 125, 125);
     color: white;
 }
 
-/* Hamburguesa */
+/* hamburguesa */
 #Hamburguesa {
-    position: relative;
+    position: relative; /* Define el contexto del menú desplegable */
 }
-
-#ulH {
+#ulH{
     position: absolute;
     display: none;
-}
-
-#menuH:checked ~ #ulH {
+  }
+  
+#menuH:checked ~ #ulH{
     display: block;
-    position: absolute;
-    top: 100%;
-    left: -11em;
-    background-color: #E6EDF3;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    position: absolute; /* Posición relativa al contenedor */
+    top: 100%; /* Aparece justo debajo del botón */
+    left: -11em; /* Alineado al lado izquierdo */
+    background-color: #e6e6e6; /* Fondo del menú */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para mejor visibilidad */
+    z-index: 1000; /* Asegúrate de que el menú esté encima */
 }
-
+  
 #menuH {
     display: none;
 }
-
+  
 #lbMenu {
+    box-sizing: border-box;
     display: inline-block;
+    /* border: 1px solid black; */
     border-radius: 5px;
     width: 30px;
     height: 30px;
     line-height: 30px;
+    font-weight: bold;
     text-align: center;
     user-select: none;
-    background-color: #4A90E2;
-    color: white;
 }
-
-#lbMenu:hover {
-    background: #357ABD; /* Azul más oscuro */
+  
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+#lbMenu:hover{
+    background: grey;
 }
-
-#ulH > li {
-    background: #E6EDF3;
+  
+  /* Estilo del boton cuando el menú está expandido*/
+input:checked ~ .lbMenu {
+    background: lightgrey; 
+}
+  
+#ulH{
+    margin-top:0;
+    padding: 0;
+    width: 200px;
+  
+}
+  
+#ulH>li {
+    background: lightgrey;
     margin: 0;
     padding: 10px;
     list-style: none;
-    border-bottom: 1px solid #B3C4D6; /* Gris intermedio */
+    border-bottom: 1px solid grey;
+}
+  
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+#ulH>li:hover {
+    filter: brightness(110%);
 }
 
-#ulH > li:hover {
-    background: #D4E0ED; /* Fondo más claro al pasar el mouse */
+#block{
+    display: block;
 }
 
 /* Main */
 main {
-    background-color: #769ec7; /* Fondo blanco para secciones principales */
+    /* background-image: url(/img/imgMain.jpg); */
+    /* filter: blur(0.1em); */
+    /* max-height: 100vh; */
+    background-color: #BFA3AA;
     padding: 2em;
     text-align: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
 }
 
 #titulo {
     font-size: 1.8em;
     color: #333;
     margin-bottom: 1em;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #E6EDF3;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.hero .title {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.hero .subtitle {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.cta-buttons .btn {
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    color: white;
-    background-color: #4A90E2;
-    transition: background-color 0.3s;
-}
-
-.cta-buttons .btn:hover {
-    background-color: #357ABD;
 }
 
 /* Footer */
@@ -169,13 +162,13 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    background-color: #E6EDF3;
+    background-color: #F2DFE6;
 }
 
 #redes a {
     margin: 0 0.5em;
     text-decoration: none;
-    color: #4A90E2;
+    color: #333;
     font-weight: bold;
 }
 
@@ -184,7 +177,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2em;
-    background-color: #E6EDF3;
+    background-color: #F2DFE6;
     text-align: center;
 }
 
@@ -195,27 +188,27 @@ footer {
 
 .titulos {
     font-size: 1em;
-    color: #333;
+    color: grey;
     margin-bottom: 0.5em;
 }
 
 #copy {
-    background-color: #F9F9F9;
+    background-color: #F2F2F2;
     padding: 1em;
     text-align: center;
     font-size: 0.9em;
 }
 
-
 /* Media Queries */
 /* Ajustes para dispositivos pequeños */
 @media only screen and (max-width: 768px) {
-    #Hamburguesa {
+    #Hamburguesa{
         display: flex;
     }
-
     #myDropdown {
         display: none;
+        /* flex-direction: column; */
+        /* text-align: center; */
     }
 
     #myDropdown li {
@@ -230,7 +223,7 @@ footer {
 
 /* Ajustes para dispositivos medianos */
 @media only screen and (min-width: 768px) {
-    #Hamburguesa {
+    #Hamburguesa{
         display: none;
     }
 }

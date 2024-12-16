@@ -1,0 +1,46 @@
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  main>h1{
+    margin-bottom: 1em;
+  }
+  main>section{
+    margin-top: 1.5em;
+  }
+  iframe {
+    border: 1px solid #ccc;
+  }
+  #seccio {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #seccio>section{
+    flex:1;
+  }
+  #equipo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #equipo>img{
+    border-radius: 2em;
+    width: 10em;
+    height: 10em;
+    margin: 0.5em;
+    object-fit: cover;
+  }
+  @media only screen and (max-width: 1068px) {
+    #seccio{
+      flex-direction: column;
+    }
+    #equipo{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
