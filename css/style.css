@@ -4,17 +4,23 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
+    list-style: none;
 }
-
 body {
-    height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
+    background-color: #F9F9F9; /* Fondo principal más claro */
+    color: #333; /* Texto oscuro */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #4A90E2; /* Azul suave para enlaces */
 }
 
 header {
-    background-color: #F2DFE6;
+    background-color: #E6EDF3; /* Fondo gris azulado */
 }
 
 /* Header */
@@ -44,90 +50,74 @@ header {
 #myDropdown li a {
     text-decoration: none;
     font-size: 16px;
-    color: #333;
+    color: #333; /* Texto oscuro */
     padding: 0.5em 1em;
     border-radius: 0.5em;
     transition: background-color 0.3s;
 }
 
 #myDropdown li a:hover {
-    background-color: rgb(125, 125, 125);
+    background-color: #4A90E2; /* Azul suave */
     color: white;
 }
 
-/* hamburguesa */
-#ulH{
-    display: none;
-  }
-  
-#menuH:checked ~ #ulH{
-    display: block;
+/* Hamburguesa */
+#Hamburguesa {
+    position: relative;
 }
-  
+
+#ulH {
+    position: absolute;
+    display: none;
+}
+
+#menuH:checked ~ #ulH {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -5em;
+    background-color: #E6EDF3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
 #menuH {
     display: none;
 }
-  
+
 #lbMenu {
-    box-sizing: border-box;
     display: inline-block;
-    /* border: 1px solid black; */
     border-radius: 5px;
     width: 30px;
     height: 30px;
     line-height: 30px;
-    font-weight: bold;
     text-align: center;
     user-select: none;
+    background-color: #4A90E2;
+    color: white;
 }
-  
-  /* Estilo del boton cuando se pasa el mouse por encima*/
-#lbMenu:hover{
-    background: grey;
+
+#lbMenu:hover {
+    background: #357ABD; /* Azul más oscuro */
 }
-  
-  /* Estilo del boton cuando el menú está expandido*/
-input:checked ~ .lbMenu {
-    background: lightgrey; 
-}
-  
-#ulH{
-    margin-top:0;
-    padding: 0;
-    width: 200px;
-  
-}
-  
-#ulH>li {
-    background: lightgrey;
+
+#ulH > li {
+    background: #E6EDF3;
     margin: 0;
     padding: 10px;
     list-style: none;
-    border-bottom: 1px solid grey;
-}
-  
-  /*Estilo cuando el mouse pasa encima de cada link del menu*/
-#ulH>li:hover {
-    filter: brightness(110%);
+    border-bottom: 1px solid #B3C4D6; /* Gris intermedio */
 }
 
-#block{
-    display: block;
+#ulH > li:hover {
+    background: #D4E0ED; /* Fondo más claro al pasar el mouse */
 }
 
 /* Main */
 main {
-    background-color: #BFA3AA;
+    background-color: #769ec7; /* Fondo blanco para secciones principales */
     padding: 2em;
     text-align: center;
-}
-
-#main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5em;
 }
 
 #titulo {
@@ -136,24 +126,18 @@ main {
     margin-bottom: 1em;
 }
 
-#contenidorDescarga {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-}
-
-.BotonesDescarga {
-    background-color: white;
-    padding: 0.8em 1.5em;
-    border-radius: 0.3em;
-    font-weight: bold;
-    cursor: pointer;
+.cta-buttons .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #4A90E2;
     transition: background-color 0.3s;
 }
 
-.BotonesDescarga:hover {
-    background-color: #ddd;
+.cta-buttons .btn:hover {
+    background-color: #357ABD;
 }
 
 /* Footer */
@@ -166,13 +150,13 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    background-color: #F2DFE6;
+    background-color: #E6EDF3;
 }
 
 #redes a {
     margin: 0 0.5em;
     text-decoration: none;
-    color: #333;
+    color: #4A90E2;
     font-weight: bold;
 }
 
@@ -181,7 +165,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2em;
-    background-color: #F2DFE6;
+    background-color: #E6EDF3;
     text-align: center;
 }
 
@@ -192,35 +176,31 @@ footer {
 
 .titulos {
     font-size: 1em;
-    color: grey;
+    color: #333;
     margin-bottom: 0.5em;
 }
 
 #copy {
-    background-color: #F2F2F2;
+    background-color: #F9F9F9;
     padding: 1em;
     text-align: center;
     font-size: 0.9em;
 }
 
+
 /* Media Queries */
 /* Ajustes para dispositivos pequeños */
 @media only screen and (max-width: 768px) {
-    #Hamburguesa{
+    #Hamburguesa {
         display: flex;
     }
+
     #myDropdown {
         display: none;
-        /* flex-direction: column; */
-        /* text-align: center; */
     }
 
     #myDropdown li {
         margin: 0.5em 0;
-    }
-
-    #contenidorDescarga {
-        flex-direction: column;
     }
 
     #footerPrincipal {
@@ -231,19 +211,7 @@ footer {
 
 /* Ajustes para dispositivos medianos */
 @media only screen and (min-width: 768px) {
-    #Hamburguesa{
+    #Hamburguesa {
         display: none;
-    }
-    /* #myDropdown li a {
-        /* font-size: 14px; */
-    /* } */
-
-    /* #titulo { */
-        /* font-size: 1.5em; */
-    /* } */
-
-    .BotonesDescarga {
-        /* font-size: 14px; */
-        padding: 0.5em 1em;
     }
 }
