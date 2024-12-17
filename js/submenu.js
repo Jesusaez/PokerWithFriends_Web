@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const submenu = document.getElementById("submenu");
     const footer = document.querySelector("footer");
-    const fondo = document.querySelector("#fondo");
+    const fondo = document.querySelector("#fondoo");
   
     const observer = new IntersectionObserver(
       (entries) => {

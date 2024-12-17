@@ -1,14 +1,14 @@
-.hero {
+/* .hero {
     text-align: center;
     padding: 50px 20px;
     background: url('https://example.com/poker-table-bg.jpg') no-repeat center/cover;
     color: white;
-  }
+  } */
   
   .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
   }
   
   .buttons {
@@ -18,7 +18,7 @@
   }
   
   .btn {
-    background-color: #d81b60;
+    background-color: #d81b60;  
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -37,13 +37,13 @@
 /* CARROUSEL */
 .carousel {
   position: relative;
-  max-width: 40%;
+  max-width: 60%;
   min-height: 4em;
   max-height: 25em;
   margin: 50px auto;
   overflow: hidden;
   border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(216, 27, 96, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Contenedor de los slides */
@@ -56,10 +56,9 @@
 .carousel-slide {
   flex: 0 0 100%;
 }
-
 .carousel-slide img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 15px;
   object-fit: cover;
 }
@@ -69,7 +68,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(216, 27, 96, 0.5);
+  background-color: rgba(27, 46, 216, 0.5);
   color: white;
   border: none;
   border-radius: 50%;

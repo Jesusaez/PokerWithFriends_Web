@@ -10,14 +10,15 @@
     display: flex;
     flex-direction: column;
     position: fixed; /* Fija el menú en la pantalla */
-    top: 20em;
+    top: 25vh;
     right: 2em; /* Alineado a la derecha */
     width: 10em;
     background-color: #333;
+    background-color: #244974;
     padding: 20px 0; /* Espaciado interno */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
-    border-radius: 20em;
+    border-radius: 2em;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -44,6 +45,7 @@
   #submenu ul li a {
     text-decoration: none;
     color: white;
+    border-radius: 20em;
     padding: 10px 15px;
     display: block;
     transition: background-color 0.3s;
@@ -51,6 +53,7 @@
   
   #submenu ul li a:hover {
     background-color: #555;
+    background-color: #162d47;
   }
   
   /* Estilo para el submenú */
@@ -83,17 +86,16 @@
     flex: 1; /* Ocupa el espacio disponible */
     padding: 20px;
   }
-  #fondo{
+  #fondoo{
     background-image: url('/img/fondo.png');
     background-repeat: no-repeat;  
     background-position: center;
     background-size: cover;
     margin:-2em;
-    width: 100vw;
     height: 80vh;
     /* filter: blur(0.5em); */
   }
-  #fondo>h1{
+  #fondoo>h1{
     color:rgba(255, 255, 255, 0.823);
     padding-top: 3em;
     font-size: 5em;
@@ -103,33 +105,74 @@
     margin-bottom: 10em;
     justify-self: center;
   }
-  #cajaFotos{
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: center; */
-  }
+  
   .fotosCaja{
     margin-top: -5em;
-    margin-left: 3em;
+    /* margin-left: 3em; */
     border: white 1em solid;
     border-radius: 1em;
     width: 30em;
+    height: 50vh;
+  }
+
+  .fotosCaja2{
+    border: white 1em solid;
+    border-radius: 1em;
+    width: 30em;
+    height: 40vh;
+    margin-top: 1em;
   }
   .row{
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
+  .row>li{
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  #caract{
+    padding-bottom: 2em;
+
+  }
   #trailer{
-    width: 70vw;
+    width: 50vw;
     height: 50vh;
+  }
+  #motius{
+    margin-left: 17vw;
+    width: 60vw;
+    background-color: #6c90b4;
+    border-radius: 1em;
+  }
+  #motius>h2{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+  #motius>p{
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 0.5em;
+    text-align: justify;
+  }
+  #divTrailer{
+    margin-top: 3em;
+    margin-bottom: 1em;
+  }
+  #divTrailer>iframe{
+    margin-top: 1em;
   }
   @media only screen and (max-width: 768px) {
     .fotosCaja{
       max-width: 20em;
     }
-    #fondo>h1{
-      padding: 0;
+    .fotosCaja2{
+      max-width: 20em;
+      margin-left: -5vw;
+    }
+    .fotosCaja:nth-child(2){
+      margin-left: 0;
     }
   }
   @media only screen and (max-width: 1068px) {
@@ -149,9 +192,18 @@
     #trailer{
       height: 30vh;
     }
+    #fondoo>h1{
+      padding: 0;
+    }
+    .fotosCaja:nth-child(2){
+      margin-left: 0;
+    } 
   }
   @media only screen and (max-width: 1768px) {
     #cajaFotos>img{
       margin-bottom: 8em;
     }
+    /* .fotosCaja:nth-child(2){
+      margin-left: 3em;
+    }  */
   }
